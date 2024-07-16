@@ -9,28 +9,26 @@ body{
     background: linear-gradient(to top , #D8EEEE , #005986);
     margin-right: 0 8px;
 }
-
-
-
 .card{
     width: 90%;
     max-width: 450px;
-    /* background: linear-gradient(135deg , #00feba , #5b548a); */
     color: #fff;
     margin: 100px auto 0;
     padding: 40px 35px;
     border-radius: 20px;
     text-align: center;
+    background: linear-gradient(270deg, #177db0, #5b548a);
 
-   
-    background: linear-gradient(270deg, #01c1b0, #5b548a);
+    /* for animated bg  */
     background-size: 400% 400%;
+    -webkit-animation: AnimationName 50s ease infinite;
+    -moz-animation: AnimationName 50s ease infinite;
+    animation: AnimationName 50s ease infinite;
 
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+/* for animated bg  */
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
@@ -46,10 +44,6 @@ body{
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-
-
-
-
 
 .search{
     width: 90%;
@@ -125,4 +119,13 @@ body{
 .humidity , .wind{
     font-size: 24px;
     margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+.err-message{
+    margin-top: 15px;
+    color: red;
+    display: none;
 }

@@ -5,6 +5,8 @@ const wind = document.querySelector(".wind");
 const btnSearch = document.querySelector(".btn-search");
 const searchInput = document.querySelector(".search-input");
 const weatherIcon = document.querySelector(".weather-icon");
+const weather = document.querySelector(".weather");
+const errorMessage = document.querySelector(".err-message");
 
 
 function renderWeather(data){
@@ -29,6 +31,8 @@ function renderWeather(data){
     }else{
       weatherIcon.src = "images/clear.png" 
     }
+    errorMessage.style.display = 'none';
+    weather.style.display = 'block';
 }
 
 function getWeather(city) {
@@ -43,7 +47,10 @@ function getWeather(city) {
     renderWeather(data);
   })
 
-  .catch((err) => console.log(err));
+  .catch((err) =>{
+    errorMessage.style.display = 'block';
+    weather.style.display = 'none';
+  });
 
 }
 
