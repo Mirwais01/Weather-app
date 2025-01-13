@@ -1,7 +1,13 @@
-function SearchBar() {
+function SearchBar({ query, setQuery }) {
   return (
     <div>
-      <input type="text" id="city-input" placeholder="Enter city name" />
+      <input
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        type="text"
+        id="city-input"
+        placeholder="Enter city name"
+      />
     </div>
   );
 }
