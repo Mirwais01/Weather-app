@@ -1,5 +1,12 @@
+import Navigation from "../components/Navigation";
+
 function TenDay() {
-  return <h1>10 day weahter</h1>;
+  return (
+    <div>
+      <Navigation />
+      <h1>10 day weahter</h1>
+    </div>
+  );
 }
 
 export default TenDay;

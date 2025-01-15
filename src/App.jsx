@@ -39,12 +39,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index path="/" element={<HomePage />} />
-        <Route path="/today" element={<Today />} />
-        <Route path="/hourly" element={<Hourly />} />
-        <Route path="/tenDay" element={<TenDay />} />
-        <Route path="/weekend" element={<Weekend />} />
-        <Route path="/monthly" element={<Monthly />} />
+        <Route index path="" element={<HomePage />} />
+        <Route path="today" element={<Today />} />
+        <Route path="hourly" element={<Hourly />} />
+        <Route path="tenDay" element={<TenDay />} />
+        <Route path="weekend" element={<Weekend />} />
+        <Route path="monthly" element={<Monthly />} />
       </Routes>
     </BrowserRouter>
   );

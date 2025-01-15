@@ -1,5 +1,12 @@
+import Navigation from "../components/Navigation";
+
 function Today() {
-  return <h1>Today weather</h1>;
+  return (
+    <div>
+      <Navigation />
+      <h1>Today weather</h1>
+    </div>
+  );
 }
 
 export default Today;
